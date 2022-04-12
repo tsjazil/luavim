@@ -1,0 +1,17 @@
+local keymap = vim.api.nvim_set_keymap
+vim.g.mapleader = " "
+keymap ( 'n' , '<c-s>' , ':w<CR>' , {}  )
+keymap ( 'n', 'Q', '<c-v>' , {})
+keymap ( 'n', 'fq', ':q!<CR>' , {})
+keymap ( 'n', 'qq', ':q<CR>' , {})
+keymap ( 'n', '<c-l>', ':NvimTreeToggle<CR>' , {})
+keymap ( 'n', '<c-h>', ':Telescope help_tags<CR>' , {})
+keymap ( 'n', '<c-g>', ':Telescope ' , {})
+keymap ( 'n', '<c-f>', ':Telescope find_files<CR>' , {})
+keymap ( 'n', '<c-Y>', ':PackerSync <CR>' , {})
+keymap ( 'n', '<c-b>', ':PackerInstall<CR>' , {})
+keymap ( 'n', '<S-h>', ':BufferLineCycleNext<CR>' , {})
+keymap ( 'n', '<S-l>', ':BufferLineCloseLeft<CR>' , {})
+keymap ( 'n', '<leader>n', ':so %<CR>' , {})
+keymap ( 'n', '<leader>v', ':vsplit<CR>' , {})
+keymap ( 'n', '<leader>s', ':split<CR>' , {})
