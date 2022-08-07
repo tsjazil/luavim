@@ -7,13 +7,12 @@ end
 nvim_tree.setup {
   view = {
     width = 10,
-    side = "left",
-    hide_root_folder = true,
+    side = "left", hide_root_folder = true,
   },
   disable_netrw = true,
   hijack_cursor = true,
   update_cwd = true,
-  update_to_buf_dir = {
+  hijack_directories = {
     auto_open = true,
   },
   renderer = {

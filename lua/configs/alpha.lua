@@ -49,8 +49,7 @@ local plugin_count = {
 local heading = {
     type = "text",
     -- val = "┌─   Today is " .. date .. " ─┐",
-    val = {
-   "",
+    val = { "",
    "┌─   Today is " .. date .. " ─┐",
     },
     opts = {

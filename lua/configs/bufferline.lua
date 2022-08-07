@@ -93,6 +93,14 @@ bufferline.setup {
       -- guibg = { attribute = "bg", highlight = "TabLine" },
     },
 
+
+    buffer = {
+      guifg = {attribute='fg',highlight='#ff0000'},
+      guibg = {attribute='bg',highlight='Tabline'},
+      -- gui = 'italic',
+      gui = 'italic',
+      },
+
     buffer_selected = {
       guifg = {attribute='fg',highlight='#ff0000'},
       guibg = {attribute='bg',highlight='Tabline'},
@@ -156,8 +164,9 @@ bufferline.setup {
 -- fddd
     modified = {
       guifg = { attribute = "fg", highlight = "Character" },
-      guibg = { attribute = "bg", highlight = "none" },
-      -- guibg = { attribute = "bg", highlight = "Tabline" },
+      -- guibg = { attribute = "bg", highlight = "none" },
+      -- guibg = { attribute = "bg", highlight = "none" },
+      guibg = { attribute = "bg", highlight = "Tabline" },
     },
     modified_selected = {
       guifg = { attribute = "fg", highlight = 'Character' },

@@ -10,7 +10,21 @@ vim.cmd [[ packadd packer.nvim ]]
 require('packer').startup {
   function()
     use 'wbthomason/packer.nvim'
+    use {"ellisonleao/glow.nvim", branch = 'main'}
     
+     use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
+     use 'williamboman/nvim-lsp-installer'
+     use 'hrsh7th/cmp-nvim-lsp'
+     use 'folke/trouble.nvim'
+     use 'hrsh7th/cmp-buffer'
+     use 'hrsh7th/cmp-path'
+     use 'hrsh7th/cmp-cmdline'
+     -- use 'hrsh7th/nvim-cmp'
+     use 'hrsh7th/cmp-vsnip'
+     use 'hrsh7th/vim-vsnip'
+
+     use 'tamton-aquib/staline.nvim'
+    use { 'feline-nvim/feline.nvim', tag = 'v0.1' }
     -- On buffer stuff
     use { 
       'norcalli/nvim-colorizer.lua',
@@ -23,6 +37,12 @@ require('packer').startup {
       requires = { 'nathom/filetype.nvim' },
     }
     
+    use {
+      'kwakzalver/duckytype.nvim'
+      --  config = function()
+      --   require('duckytype').setup{}
+      -- end
+    }
     -- UI
     -- use 'arcticicestudio/nord-vim'
     use 'catppuccin/nvim'
@@ -37,7 +57,7 @@ require('packer').startup {
       config = function()
         require('configs.alpha')
       end
-        
+
     }
 
 
